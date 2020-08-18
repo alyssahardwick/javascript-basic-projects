@@ -15,9 +15,28 @@ body{
     color: antiquewhite;
 }
 
-.location {
+.location,
+.temperature {
     height: 30vh;
     width: 50%;
     display: flex;
     justify-content: space-around;
+}
+
+.temperature {
+    flex-direction: column;
+}
+
+.degree-section {
+    display: flex;
+    align-items: center;
+}
+
+.degree-section span {
+    margin: 10px;
+    font-size: 30px;
+}
+
+.degree-section h2 {
+    font-size: 40px;
 }
