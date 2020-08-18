@@ -19,10 +19,12 @@ window.addEventListener('load', ()=> {
             })
             .then(data =>{
                 console.log(data)
-                const {temp_f, text} = data.current;
+                const {temp_f} = data.current;
+                const {text} = data.current.condition;
                 //set DOM elements from the API
 
                 temperatureDegree.textContent = temp_f;
+                temperatureDescription.textContent = text;
 
                 });
 
